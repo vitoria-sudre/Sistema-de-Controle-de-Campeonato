@@ -5,31 +5,38 @@ int main(){
 	
 	
 	int QuantidadeDeEquipes, QuantidadeDeJogos;
+    
+    	
+	printf("Digite o numero de equipes (3 a 10): ");
+	scanf("%d", &QuantidadeDeEquipes);
 
 	
-	while(QuantidadeDeEquipes >= 3 || QuantidadeDeEquipes <= 10){
+	while(QuantidadeDeEquipes < 3 || QuantidadeDeEquipes > 10){
 	
 	
 		
-	printf("Digite a quantiade de equipes de 3 a 10: ");
-	scanf("%d", QuantidadeDeEquipes);
+	printf("Numero invalido! Digite novamente: ");
+	scanf("%d", &QuantidadeDeEquipes);
 
 		
 	}
 	
-	while(QuantidadeDeJogos >= 1 || QuantidadeDeJogos <=10){
+	
+	printf("Digite a quantiade de jogos por equipe (1 a 10): ");
+	scanf("%d", &QuantidadeDeJogos);
+	
+	while(QuantidadeDeJogos < 1 || QuantidadeDeJogos > 10){
 		
 		
-	printf("Digite a quantiade de equipes de 3 a 10: ");
-	scanf("%d", QuantidadeDeJogos);
+	printf("Numero invalido! Digite novamente: ");
+	scanf("%d", &QuantidadeDeJogos);
 	
 		
 	}
 	
 		
   
-  	printf("Digite Novemente!");
+  	
   	
   }
 	
-
